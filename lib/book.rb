@@ -11,7 +11,7 @@ class Book
   end
   def genre=(genre)
     @genre = genre
-    GENRES << genre if G
+    GENRES << genre if !GENRES.include?(genre)
   end
 
 
